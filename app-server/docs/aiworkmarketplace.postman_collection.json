@@ -1,0 +1,1836 @@
+{
+	"info": {
+		"_postman_id": "b2567264-057b-4e4c-b174-e85a452c631b",
+		"name": "aiworkmarketplace",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14970584"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"jannymita9493@gmail.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0xA7E9eDbD4d311613963764BD65870c863967A92a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/auth",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"jannymita9493@gmail.com\",\n    \"password\": \"changemenow@2022\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/auth/login",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth/login",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=typDLexRCSJNg4L179LfjusnwKOoPFIk4uHHinto1fOLfs92hOIFS8n0i4idbfbh7iFmtOGJGzDdiaQFofoo7Hsmqi7fJH9QjmvX4%2FCzw9vJGI3FoD89TTQzDwIlNvr%2BMcRK%2FEQdH7xbu80Xj2mUzlTgtPYZ\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c3307abbd691b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				},
+				{
+					"name": "send reset password email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": 1,\n    \"email\": \"jannymita9493@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/auth/recovery/password",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"auth",
+								"recovery",
+								"password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				},
+				{
+					"name": "recover password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"state\": \"CJdFmTldsZyHRftc+uZd2qhUsWWwSrPtG1PHE/2sJ5p+EpuuyfuRuALkx3kNho9WgXx4KKXG1+aCwfT+en+irV43JOz4iHmTrRhXFYdlWu3ZzE2WDkObOG8oMf8OPthkyTohAKxoRd6G1/aqzhqgWeff\",\n    \"payload\": {\n        \"password\": \"changemenow@2022\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/auth/recovery/verification",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"auth",
+								"recovery",
+								"verification"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				},
+				{
+					"name": "verify new account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"state\": \"d6poJRhZMzpyhk7jzgYvzfWOcpK8GmPpx5zZZhJxgrmr2fLfQBNfT8AEhumU5cHuH4B0uRvLLmdhNhVaxUXvTpzlY9xKFfleHoQG5JWfzz6CVZeRoTxzCA13EN4PwgoVnusm/z8x03gDXncWwzsqnRgZFFmhO+2e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/auth/recovery/verification",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"auth",
+								"recovery",
+								"verification"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"jannymita9493@gmail.com\",\n    \"password\": \"changemenow@2022\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/admin/login",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth/login",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=typDLexRCSJNg4L179LfjusnwKOoPFIk4uHHinto1fOLfs92hOIFS8n0i4idbfbh7iFmtOGJGzDdiaQFofoo7Hsmqi7fJH9QjmvX4%2FCzw9vJGI3FoD89TTQzDwIlNvr%2BMcRK%2FEQdH7xbu80Xj2mUzlTgtPYZ\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c3307abbd691b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user.1@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"User 1\",\n    \"wallet\": \"0xA7E9eDbD4d311613963764BD65870c863967A92a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/admin/users",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "update password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\": \"changemenow@2023\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/users/password",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"users",
+								"password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Tuan Dep Trai\",\n    \"wallet\": \"0xA7E9eDbD4d311613963764BD65870c863967A92a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/users/profile",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_ENDPOINT}}/users/me",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"password\": \"maimaimottinhyeu\",\n    \"name\": \"Tuan Nguyen\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/auth",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PrOkST30LuqZVT7Bb725e%2BkU1HMmvkW4F3l1d7P1iY0itAOm8EOmT5CHSU1UKPR4k4VU419jtoAPlu4MFy4A2Ssg7EgUVRQPNUkuapeZCl7Vog9B5j7Zw3CdiRXX1vCf6jZjG%2BiBxZxsrxpvfKqg0TDoOg8L\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c330119d7291b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"user_2DUIvQ96lBdce3LqMyHwmf5SVxI\",\n    \"wallet\": \"0x0EED72B06a3737aC6D88CEE445c6b716027b84c3\",\n    \"email\": \"tuan.nguyen@aiworkmarketplace.kubeplusplus.com\",\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1YW4ubmd1eWVuQGFpd29ya21hcmtldHBsYWNlLmt1YmVwbHVzcGx1cy5jb20iLCJpZCI6InVzZXJfMkRVSXZROTZsQmRjZTNMcU15SHdtZjVTVnhJIiwibmFtZSI6IlR1YW4gTmd1eWVuIiwid2FsbGV0IjoiMHgwRUVENzJCMDZhMzczN2FDNkQ4OENFRTQ0NWM2YjcxNjAyN2I4NGMzIn0.FYd5WWZ9ic5WcypWLCi-dp69w82qpObTPbz-LT3sk4E\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "tasks",
+			"item": [
+				{
+					"name": "task creation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"labeling motobikes\",\n    \"category\": \"labeling\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/tasks",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "task creation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"labeling motobikes\",\n    \"category\": \"labeling\",\n    \"walpayment_txnlet\": \"0x1ada9501e6664ce18cac98076092b723b8f8bd7253e823c08f4e5ccc5267921c\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/tasks",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"tasks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:44:47 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NALCcLwoAgoIk6vJnpfj0F%2FZDpoL8yFNE7jqMMPzLaSJ9CiuvphP4in712au4hpLbPRUAhyZeyh%2FeR58HeOi%2FRo3%2F5Dfk%2BJhNyxWN5dtJjiJEHSfFE7lS6cZpoWz6ciqebQt0eJjiarKX9uFEPhN6%2FrR6G06\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c33096fe9191b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw\",\n    \"user_id\": \"user_2DUIpiHw1sooq9cSEE62Vg9HOYK\",\n    \"created_at\": \"2022-08-17T14:44:47.845228989Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "sign upload url",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"labeling motobikes\",\n    \"category\": \"labeling\",\n    \"walpayment_txnlet\": \"0x1ada9501e6664ce18cac98076092b723b8f8bd7253e823c08f4e5ccc5267921c\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/tasks/:task_id/images/upload-url?filename=doggo.png",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"tasks",
+								":task_id",
+								"images",
+								"upload-url"
+							],
+							"query": [
+								{
+									"key": "filename",
+									"value": "doggo.png"
+								}
+							],
+							"variable": [
+								{
+									"key": "task_id",
+									"value": "task_2DiKiQsMenB0wWqIlPw7wpmtuFO"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sign upload url",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"labeling motobikes\",\n    \"category\": \"labeling\",\n    \"walpayment_txnlet\": \"0x1ada9501e6664ce18cac98076092b723b8f8bd7253e823c08f4e5ccc5267921c\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/tasks/:task_id/images/upload-url?filename=doggo.png",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"tasks",
+										":task_id",
+										"images",
+										"upload-url"
+									],
+									"query": [
+										{
+											"key": "filename",
+											"value": "doggo.png"
+										}
+									],
+									"variable": [
+										{
+											"key": "task_id",
+											"value": "task_2DUIyAvFGksRFTjC1qm4647sHRw"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:53:27 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=dKWi4sBhuxxil0RzsmVJ3KyDCZgI6wKE%2BzsMTxsivxAMq%2FXyz4sC%2BWAkczfiQPAXMHROwbfqwBj%2B9G7bNAqv3kPX2hDX6P8KKwknvoV5YEwkQSZyTzNilnfsyYB4VoP9VNVHauts6%2F4UqoWVQ3t1N%2FBXrBgt\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c33d4498b891b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"asset\": {\n        \"id\": \"asset_2DUK1Qnr5hNT81vFEzGoe5XbMmw\",\n        \"task_id\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw\",\n        \"user_id\": \"user_2DUIpiHw1sooq9cSEE62Vg9HOYK\",\n        \"file_bucket\": \"aiworkmarketplace-private\",\n        \"file_key\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw/doggo.png\",\n        \"results\": \"\",\n        \"created_at\": \"2022-08-17T14:53:27.162151875Z\",\n        \"updated_at\": \"2022-08-17T14:53:27.161307106Z\"\n    },\n    \"url\": \"https://aiworkmarketplace-private.s3.ap-southeast-1.amazonaws.com/task_2DUIyAvFGksRFTjC1qm4647sHRw/doggo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2YVVX4HKNY4MJCX5%2F20220817%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220817T145327Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=5b243c5a603137d1357c0b8bc7306c02e8234ea82391619decff7a1bbcd4da28\"\n}"
+						}
+					]
+				},
+				{
+					"name": "task payment update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"payment_txn\": \"0xa9e22075696e614d13cb4e3fac621e63e3ef2162496a1b7e287f99f6bb142b4b\",\n    \"payment_proof\": \"https://i.picsum.photos/id/969/200/200.jpg?hmac=p4_e12QQOwtyNXXwJjJs_2kwmu87KZGqAhiUV8goVos\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_ENDPOINT}}/tasks/:task_id/payment",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"tasks",
+								":task_id",
+								"payment"
+							],
+							"variable": [
+								{
+									"key": "task_id",
+									"value": "task_2DiKiQsMenB0wWqIlPw7wpmtuFO"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "task payment update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"payment_txn\": \"0xd162b64ed5e0912fea2dcfbb02ab6f976cf2403cbd8b00e6068944799d6474d7\",\n    \"payment_proof\": \"https://i.picsum.photos/id/969/200/200.jpg?hmac=p4_e12QQOwtyNXXwJjJs_2kwmu87KZGqAhiUV8goVos\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_ENDPOINT}}/tasks/:task_id/payment",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"tasks",
+										":task_id",
+										"payment"
+									],
+									"variable": [
+										{
+											"key": "task_id",
+											"value": "task_2DUIyAvFGksRFTjC1qm4647sHRw"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 14:59:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MLmng6B2P%2BNFayLQcfLMbL673qY20%2BEd7BHndNpKQ5ngGHyq2B3UAxBgPlgCNLHC5e%2BcdLb3bq1Ka1HWxwMFVXSFWWKICcDcSmpWIGZ1liEIJdTNnE1QvK6A5f%2FaRwdeV%2FgfVlMJ3X91iYlj6U2870u8jz0T\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c345de3b3f91b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw\",\n    \"payment_txn\": \"0xd162b64ed5e0912fea2dcfbb02ab6f976cf2403cbd8b00e6068944799d6474d7\",\n    \"payment_proof\": \"https://i.picsum.photos/id/969/200/200.jpg?hmac=p4_e12QQOwtyNXXwJjJs_2kwmu87KZGqAhiUV8goVos\"\n}"
+						}
+					]
+				},
+				{
+					"name": "task list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_ENDPOINT}}/tasks",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "_page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "_limit",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "created_at_start",
+									"value": "2022-08-25T00:00:00.000Z",
+									"disabled": true
+								},
+								{
+									"key": "created_at_end",
+									"value": "2022-08-26T00:00:00.000Z",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "0",
+									"description": "0 - pending\n100 - processing\n200 - completed",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "task_2Dq7wWsJS7EiObzLz3R6LBoWl0g",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_ENDPOINT}}/tasks/:task_id",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"tasks",
+								":task_id"
+							],
+							"variable": [
+								{
+									"key": "task_id",
+									"value": "task_2DiKiQsMenB0wWqIlPw7wpmtuFO"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get task",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_ENDPOINT}}/tasks/:task_id",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"tasks",
+										":task_id"
+									],
+									"variable": [
+										{
+											"key": "task_id",
+											"value": "task_2DUIyAvFGksRFTjC1qm4647sHRw"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 15:02:36 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BJAVHVBBGHlBLP1bWH%2B1ZUIITjaieB4cSqCS9H8yGUhxyUA02A6P0tWqqVqpN1X%2FHYNtIQHH1wKI7OUVz9BXLDIP5VkQI7hIlD5PJJiaCMBQAmmSfrr1zhijIdStQ%2BJvSZefNeNIh0zeV9S9%2B%2FzQspPMGcIS\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c34aae69fc91b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw\",\n    \"user_id\": \"user_2DUIpiHw1sooq9cSEE62Vg9HOYK\",\n    \"name\": \"labeling motobikes\",\n    \"category\": \"labeling\",\n    \"payment_txn\": \"0xd162b64ed5e0912fea2dcfbb02ab6f976cf2403cbd8b00e6068944799d6474d7\",\n    \"payment_proof\": \"https://i.picsum.photos/id/969/200/200.jpg?hmac=p4_e12QQOwtyNXXwJjJs_2kwmu87KZGqAhiUV8goVos\",\n    \"created_at\": \"2022-08-17T14:44:47.845228Z\",\n    \"updated_at\": \"2022-08-17T14:59:19.419529Z\",\n    \"processing_by\": \"\",\n    \"processing_at\": null,\n    \"completed_at\": null,\n    \"assets\": [\n        {\n            \"id\": \"asset_2DUK1Qnr5hNT81vFEzGoe5XbMmw\",\n            \"task_id\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw\",\n            \"user_id\": \"user_2DUIpiHw1sooq9cSEE62Vg9HOYK\",\n            \"file_bucket\": \"aiworkmarketplace-private\",\n            \"file_key\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw/doggo.png\",\n            \"results\": \"\",\n            \"created_at\": \"2022-08-17T14:53:27.162151Z\",\n            \"updated_at\": \"2022-08-17T14:53:27.161307Z\"\n        }\n    ],\n    \"status\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "get task download result url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{API_ACCESS_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_ENDPOINT}}/tasks/:task_id/results",
+							"host": [
+								"{{API_ENDPOINT}}"
+							],
+							"path": [
+								"tasks",
+								":task_id",
+								"results"
+							],
+							"variable": [
+								{
+									"key": "task_id",
+									"value": "task_2Dq8QnhwIE6m64P9txa9IgbfY7F"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get task",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_ENDPOINT}}/tasks/:task_id",
+									"host": [
+										"{{API_ENDPOINT}}"
+									],
+									"path": [
+										"tasks",
+										":task_id"
+									],
+									"variable": [
+										{
+											"key": "task_id",
+											"value": "task_2DUIyAvFGksRFTjC1qm4647sHRw"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 17 Aug 2022 15:02:36 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BJAVHVBBGHlBLP1bWH%2B1ZUIITjaieB4cSqCS9H8yGUhxyUA02A6P0tWqqVqpN1X%2FHYNtIQHH1wKI7OUVz9BXLDIP5VkQI7hIlD5PJJiaCMBQAmmSfrr1zhijIdStQ%2BJvSZefNeNIh0zeV9S9%2B%2FzQspPMGcIS\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "73c34aae69fc91b7-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw\",\n    \"user_id\": \"user_2DUIpiHw1sooq9cSEE62Vg9HOYK\",\n    \"name\": \"labeling motobikes\",\n    \"category\": \"labeling\",\n    \"payment_txn\": \"0xd162b64ed5e0912fea2dcfbb02ab6f976cf2403cbd8b00e6068944799d6474d7\",\n    \"payment_proof\": \"https://i.picsum.photos/id/969/200/200.jpg?hmac=p4_e12QQOwtyNXXwJjJs_2kwmu87KZGqAhiUV8goVos\",\n    \"created_at\": \"2022-08-17T14:44:47.845228Z\",\n    \"updated_at\": \"2022-08-17T14:59:19.419529Z\",\n    \"processing_by\": \"\",\n    \"processing_at\": null,\n    \"completed_at\": null,\n    \"assets\": [\n        {\n            \"id\": \"asset_2DUK1Qnr5hNT81vFEzGoe5XbMmw\",\n            \"task_id\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw\",\n            \"user_id\": \"user_2DUIpiHw1sooq9cSEE62Vg9HOYK\",\n            \"file_bucket\": \"aiworkmarketplace-private\",\n            \"file_key\": \"task_2DUIyAvFGksRFTjC1qm4647sHRw/doggo.png\",\n            \"results\": \"\",\n            \"created_at\": \"2022-08-17T14:53:27.162151Z\",\n            \"updated_at\": \"2022-08-17T14:53:27.161307Z\"\n        }\n    ],\n    \"status\": 0\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

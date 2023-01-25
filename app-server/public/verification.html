@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIWORK Verification</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+    <script>
+        async function submit() {
+            const state = document.querySelector(`input[name="state"]`).value;
+            const password = document.querySelector(`input[name="password"]`).value;
+            const confirmpass = document.querySelector(`input[name="confirmpassword"]`).value;
+
+            if(!state || !password || !confirmpass) return alert("please fill all inputs");
+            if(password!==confirmpass) return alert("password and confirmed password are not matched");
+
+            const res = await fetch("/auth/recovery/verification",{
+                method: "POST",
+                headers: {"content-type": "application/json"},
+                body: JSON.stringify({ state, payload: { password } })
+            })
+            if(!res.ok) return alert("oops! something went wrong");
+
+            document.querySelector("#form").style.display = 'none';
+            document.querySelector("#message").style.display = '';
+        }
+        console.log('---')
+    </script>
+  </head>
+  <body>
+    <div id="form">
+        <input name="state" value="{{ .state }}" style="width: 100%;" required></input>
+        <br/>
+        <input placeholder="new password" name="password" type="password" style="width: 100%;" required></input>
+        <br/>
+        <input placeholder="confirm your password"name="confirmpassword" type="password" style="width: 100%;" required></input>
+        <br/>
+        <button type="submit" onClick="submit()">Verify</button>
+    </div>
+
+    <div id="message" style="display: none;">
+        <p>Verification is successful</p>
+    </div>
+  </body>
+</html>

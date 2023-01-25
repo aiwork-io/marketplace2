@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  postgresql:
+    image: bitnami/postgresql:14
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_POSTGRES_PASSWORD=changemenow
+      - POSTGRESQL_PASSWORD=changemenow
+      - POSTGRESQL_USERNAME=aiworkmarketplace
+      - POSTGRESQL_DATABASE=aiworkmarketplace
+
+  redis:
+    image: "redis:7"
+    restart: always
+    ports:
+      - 6379:6379
+
+  api:
+    build: ./
+    depends_on:
+      - redis
+      - postgresql
+    restart: always
+    ports:
+      - 80:8080
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - APP_DB_URI=postgresql://aiworkmarketplace:changemenow@postgresql:5432/aiworkmarketplace?sslmode=disable
+      - APP_TXN_VALIDTOR_ENDPOPINT=http://wallet-helpers:3000
+
+  wallet-helpers:
+    build: ./wallet-helpers
+    restart: always
+    ports:
+      - 3080:3000
+    volumes:
+      - ./logs:/usr/src/app/logs # folder to save logs as optionally debug inputs & outputs

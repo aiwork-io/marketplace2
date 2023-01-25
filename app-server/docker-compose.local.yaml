@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  postgresql:
+    image: bitnami/postgresql:14
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_POSTGRES_PASSWORD=changemenow
+      - POSTGRESQL_PASSWORD=changemenow
+      - POSTGRESQL_USERNAME=aiworkmarketplace
+      - POSTGRESQL_DATABASE=aiworkmarketplace
+
+  redis:
+    image: "redis:7"
+    restart: always
+    ports:
+      - 6379:6379
