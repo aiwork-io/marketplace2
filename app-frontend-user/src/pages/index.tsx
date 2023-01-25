@@ -1,0 +1,9 @@
+export { default as LoadingPage } from "./Loading";
+export { default as NotFoundPage } from "./NotFound";
+export { default as LoginPage } from "./Login";
+export { default as SignUpPage } from "./SignUp";
+export { default as ProcurePage } from "./Procure";
+export { default as Profile } from "./Profile";
+export { default as ForgotPassword } from "./ForgotPassword";
+export { default as ProcureViewDetail } from "./ProcureViewDetail";
+export { default as CreateTask } from "./CreateTask";
