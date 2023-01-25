@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  cronclient:
+    build: ./
+    restart: unless-stopped
+
+  inference-engine:
+    image: capx-object:latest # do not change, leave as it is
+    hostname: inference-engine
+    environment:
+      - ROOT_LOGLEVEL=DEBUG # logging level can be "DEBUG", "INFO", "WARNING"
+      - BASEWORKER_LOGLEVEL=DEBUG # logging level can be "DEBUG", "INFO", "WARNING"
+      - HANDLER_LOGLEVEL=INFO # logging level can be "DEBUG", "INFO", "WARNING"
+      - SERVER_BIND_INTERFACE=0.0.0.0 # default to accept from all IP
+      - SERVER_PORT=80 # default to accept requests on port 80
+      - SERVER_ENDPOINT=receive # default URL endpoint to receive request
+      - CAPX_WORKER_NAME=object # do not change, leave as it is
+      - CAPX_FORCE_CPU=true # or false
+      - DARKNET_PATH=/workspace/src/module_object # do not change, leave as it is
+    ports:
+      - "3081:80" # 8081 is the host's port, 80 is the docker container's port (as above)
+    volumes:
+      - ./logs:/workspace/logs # folder to save logs as optionally debug inputs & outputs
+    restart: unless-stopped

@@ -1,0 +1,43 @@
+{
+    "source": "file:/workspace/images/1.jpg",
+    "context": {
+        "project_id": "project_id",
+        "timecode": "timecode",
+        "interest_region": [],
+        "object_filter": [],
+        "debug": true
+    },
+    "data": {
+        "object": [
+            {
+                "bbox": [
+                    418.4298400878906,
+                    199.47543334960938,
+                    334.9081726074219,
+                    479.9612121582031
+                ],
+                "score": 0.9145716428756714,
+                "category": "dog"
+            },
+            {
+                "bbox": [
+                    0.0,
+                    0.887768566608429,
+                    209.93002319335938,
+                    429.9708129763603
+                ],
+                "score": 0.4683423638343811,
+                "category": "boat"
+            }
+        ]
+    },
+    "action": "process",
+    "prev": [
+        {
+            "worker": "object",
+            "start": 1635172001682,
+            "duration": 1085
+        }
+    ],
+    "next": []
+}
